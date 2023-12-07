@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="'id: ' + ${movie.id}" />
+<p th:text="'name: ' + ${movie.name}" />
+
+<p th:text="'Star: ' + ${movieRecord.value().star()}"/>
+<p th:text="'Movie-Name: ' + ${movieRecord.value().movieName()}"/>
+<p th:text="'Year: ' + ${movieRecord.value().year()}"/>
+<a href="/star">Submit another message</a>
+</body>
+</html>
